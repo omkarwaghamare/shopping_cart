@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <span class="navbar-brand mb-0 h1">Shopping Cart</span>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#cartModal">Cart</button>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/noise.webp" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Noise buds</h5>
+                        <p class="card-text">Price: $800.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Noise buds', 800)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/boat.webp" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Boat buds</h5>
+                        <p class="card-text">Price: $999.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Boat buds', 999)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/fire boalt.webp" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fier Boalt buds</h5>
+                        <p class="card-text">Price: $500.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Fier Boalt buds', 500)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/oppo.png" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">oppo Boalt</h5>
+                        <p class="card-text">Price: $200.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('oppo Boalt', 200)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/onepluse.webp" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Onepluse buds</h5>
+                        <p class="card-text">Price: $100.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Onepluse', 100)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/noise.webp" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Noise buds</h5>
+                        <p class="card-text">Price: $599.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Noise', 599)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/onepluse.webp" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Onepluse buds</h5>
+                        <p class="card-text">Price: $199.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Onepluse', 199)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/oppo.png" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Oppo budes</h5>
+                        <p class="card-text">Price: $299.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Oppo budes', 299)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/realme.webp" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Realme buds</h5>
+                        <p class="card-text">Price: $899.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Realme buds', 899)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/samsung.webp" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung buds</h5>
+                        <p class="card-text">Price: $799.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Samsung buds', 799)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/fire boalt.webp" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fier Boalt buds</h5>
+                        <p class="card-text">Price: $659.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Fier Boalt buds', 659)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="./images/oppo.png" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Oppo buds</h5>
+                        <p class="card-text">Price: $499.00</p>
+                        <button class="btn btn-primary" onclick="addToCart('Oppo buds', 499)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cartItems" class="list-group">
+                    </ul>
+                    <p class="total-amount">Total: $0.00</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" onclick="checkout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

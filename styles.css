@@ -1,0 +1,37 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cart {
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cartItems {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.total-amount {
+    font-weight: bold;
+}
+
+.btn-primary,
+.btn-success {
+    cursor: pointer;
+}
